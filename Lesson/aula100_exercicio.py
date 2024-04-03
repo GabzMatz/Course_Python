@@ -14,6 +14,12 @@ produtos = [
 ]
 
 
+new_products= [{**product, "preco":round(product["preco"]+(product["preco"] * 0.1))
+                }for product in produtos]
+print(new_products)
+
+
+
 """new_products = produtos.copy()
 for i in new_products:
     i["preco"] =i["preco"]+i["preco"]*0.1
@@ -22,6 +28,10 @@ for i in new_products:
     i["preco"] = new_price
 print(new_products)
 """
+
+
+
+
 
 # 2-Ordene os produtos por nome decrescente (do maior para menor)
 # Gere produtos_ordenados_por_nome por deep copy (cópia profunda)
@@ -38,6 +48,7 @@ print(new_products)
 
 # 3-Ordene os produtos por preco crescente (do menor para maior)
 # Gere produtos_ordenados_por_preco por deep copy (cópia profunda)
-new_products = produtos.copy()
+"""new_products = produtos.copy()
 new_products.sort(key=lambda value : value["preco"])
 print(new_products)
+"""

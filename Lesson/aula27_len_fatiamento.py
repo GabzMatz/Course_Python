@@ -8,7 +8,7 @@ Obs.: a função len retorna a qtd
 de caracteres da str
 """
 variavel = 'Olá mundo'
-print(len(variavel[::-1]))
+print(len(variavel))
 
 x = "macacos"
 #    0123456

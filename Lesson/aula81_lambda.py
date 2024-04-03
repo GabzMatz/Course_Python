@@ -22,13 +22,11 @@ lista = [
     {'nome': 'Aline', 'sobrenome': 'Souza'},
 ]
 
-
 def exibir(lista):
     for item in lista:
         print(item)
     print()
-
-
+exibir(lista)
 l1 = sorted(lista, key=lambda item: item['nome'])
 l2 = sorted(lista, key=lambda item: item['sobrenome'])
 
